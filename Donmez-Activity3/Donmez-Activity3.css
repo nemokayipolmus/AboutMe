@@ -1,0 +1,82 @@
+body
+{
+	width: 70%;
+}
+
+.advertisement
+{
+	width:100px;
+	height:150px; 
+	border-color:black;
+	border-width:2px; 
+	background-color:gray; 
+	color:white;
+	float:left;
+	position:absolute;
+	top:10px;
+	left:10px;
+}
+
+.header
+{
+	position:relative;
+	left:150px;
+	top:5px;
+}
+
+.logo
+{
+	width:100px;
+	height:150px; 
+	border-color:black;
+	border-width:2px; 
+	position:absolute;
+	
+}
+
+.title
+{
+
+	font-size: 20px;
+	position:absolute;
+	left:450px;
+	margin-left:25px;
+
+}
+
+.content
+{
+	display: inline-block;
+	position: relative;
+	top:150px;
+	margin-left:200px;	
+	
+}
+
+.main
+{
+	margin-left:10px;
+	position:relative;
+	text-align:justify;
+}
+
+.image img
+{
+	width:250px;
+	float:left;
+	padding-right:10px;
+	
+}
+
+.head
+{
+	position:relative;
+	margin-top:240px;
+	margin-left:80px;
+	text-align:center;
+}
+
+
+
+
+
