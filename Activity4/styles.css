@@ -1,0 +1,19 @@
+input{
+    padding: 2px;
+    
+}
+
+label{
+    width: 80px;
+    display: inline-block;
+}
+
+input[type="submit"]{
+    position: relative;
+    left: 100px;
+}
+
+textarea{
+    vertical-align: top;
+}
+
