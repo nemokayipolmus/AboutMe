@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Growify</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="main.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    </head>
+
+    <body>
+        <div class="header">
+            
+			<div class="logo" onclick="window.location.href='home.html'">
+                <img src="images/logo.png"  alt="image"/>
+            </div>
+
+            <div class="nav">
+                <a href="index.html">HOME</a>
+                <a href="whoarewe.html">WHO ARE WE?</a>
+                <a href="events.html">EVENTS</a>
+                <a class="active" href="supportus.html">SUPPORT US</a>
+                <a href="contact.html">CONTACT</a>
+            </div>
+			
+			
+            <div class="social">
+              <div class="facebook">
+              <img src="images/facebook_logo.png"  alt="image" onclick="window.location.href='https://www.facebook.com'"/>
+            </div>
+
+            <div class="instagram">
+              <img src="images/instagram_logo.png"  alt="image" id="instagram" onclick="window.location.href='https://www.instagram.com'"/>
+            </div>
+
+            <div class="youtube">
+              <img src="images/youtube_logo.png"  alt="image" id="youtube" onclick="window.location.href='https://www.youtube.com'"/>
+            </div>
+			
+			
+			
+          </div>
+		  
+		<!-- Load icon library -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+		<!-- The form -->
+		
+		<div class="search" action="action_page.php">
+		<input type="text" placeholder="Search.." name="search">
+		<button type="submit"><i class="fa fa-search"></i></button>
+			
+		</div>
+
+    </div>
+    <div class="main">
+            <form class="donationForm">
+                <button class="typeButton">ONE TIME DONATION</button>
+                <button class="typeButton">REGULAR DONATION</button>
+                <br/>
+                
+                <label for="amount">SELECT DONATION AMOUNT</label><br>
+                <button class="amountButton">50$</button>
+                <button class="amountButton">100$</button>
+                <button class="amountButton">250$</button>
+                <button class="amountButton">OTHER</button><br><br>
+
+                <div class="borderedComponent">
+                <label for="name_surname">NAME SURNAME: </label>
+                <input type="text" id="name_surname" name="name_surname"><br>
+                </div>
+                
+                <div class="borderedComponent">
+                <label for="lname">PAYMENT METHOD</label><br>
+
+                <input type="image" src="images/mastercard_logo.png" class="payment" alt="submit"/> 
+                <input type="image" src="images/visa_logo.png" class="payment" alt="submit"/> 
+                <input type="image" src="images/paypal_logo.png" class="payment" alt="submit"/> 
+                </div>
+              </form>
+		
+		          <div class="donation_information">
+
+                <img id="info_img" src="images/donation.jpg"  alt="image"/>
+
+                <p>
+                    Action Kenya Initiative partners with compassionate like- minded organizations, individuals and corporate at both local and international donor levels to have a lasting impact on vulnerable women, youths and children end poverty through Social enterprises, entrepreneurship development,Health and education among other programs. The donor communities provide an avenue to support community programs, sponsor projects, and individuals as well as walk through with a beneficiary through a long term journey. We have a self-motivated and experienced team who will work with you to develop, design and deliver strategic partnerships that has a lasting and evident transformation that has a world class recognition. Your support will be highly and publicly recognized and a shared journey story of the individual groups and beneficiaries shared on regular basis.We invite you to partner with us to make a difference Today.
+                </p>
+                <br>
+      </div>
+    </div>
+        <footer>
+            <a href="home.html">HOME</a>  | 
+            <a href="whoarewe.html">WHO ARE WE?</a> | 
+            <a href="events.html">EVENTS</a> | 
+            <a href="supportus.html">SUPPORT US</a> | 
+            <a href="contact.html">CONTACT</a>
+			&copy; COPYRIGHT
+
+          </footer>
+
+    </body>
+</html>

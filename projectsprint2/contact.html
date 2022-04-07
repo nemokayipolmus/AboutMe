@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Growify</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="main.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    </head>
+
+    <body>
+        <div class="header">
+            
+			<div class="logo" onclick="window.location.href='home.html'">
+                <img src="images/logo.png"  alt="image"/>
+            </div>
+
+            <div class="nav">
+                <a href="index.html">HOME</a>
+                <a href="whoarewe.html">WHO ARE WE?</a>
+                <a href="events.html">EVENTS</a>
+                <a href="supportus.html">SUPPORT US</a>
+                <a class="active" href="contact.html">CONTACT</a>
+            </div>
+			
+			
+            <div class="social">
+              <div class="facebook">
+              <img src="images/facebook_logo.png"  alt="image" onclick="window.location.href='https://www.facebook.com'"/>
+            </div>
+
+            <div class="instagram">
+              <img src="images/instagram_logo.png"  alt="image" id="instagram" onclick="window.location.href='https://www.instagram.com'"/>
+            </div>
+
+            <div class="youtube">
+              <img src="images/youtube_logo.png"  alt="image" id="youtube" onclick="window.location.href='https://www.youtube.com'"/>
+            </div>
+			
+			
+			
+          </div>
+		  
+		<!-- Load icon library -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+		<!-- The form -->
+		
+		<div class="search" action="action_page.php">
+		<input type="text" placeholder="Search.." name="search">
+		<button type="submit"><i class="fa fa-search"></i></button>
+			
+		</div>
+
+    </div>
+
+    <div class="contactMain">
+      <form class="contactForm">
+
+          
+          <label for="name_surname">NAME SURNAME: </label>
+          <input type="text" id="name_surname" name="name_surname"><br>
+
+          <label for="name_surname">E-MAIL ADDRESS: </label>
+          <input type="email" id="email_address" name="email_address"><br>
+         
+          <div id="messagePart">
+          <label for="message">YOUR MESSAGE</label><br>
+
+          <textarea id="message" name="message" rows="16" cols="75">
+          </textarea>
+
+      </div>
+        </form>
+
+        <div id="numbers">
+          <h3>TELEPHONE NUMBERS</h3>
+          <p>(0312) 456-89-74</p>
+          <p>(0312) 456-89-75</p>
+        </div>
+
+        <div id="location">
+         <h3>LOCATION</h3>
+          <img src="images/location.png"/>
+        </div>
+
+  </div>
+
+        <footer>
+            <a href="home.html">HOME</a>  | 
+            <a href="whoarewe.html">WHO ARE WE?</a> | 
+            <a href="events.html">EVENTS</a> | 
+            <a href="supportus.html">SUPPORT US</a> | 
+            <a href="contact.html">CONTACT</a>
+			&copy; COPYRIGHT
+
+          </footer>
+    </body>
+</html>

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Growify</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="main.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    </head>
+
+    <body>
+        <div class="header">
+            
+			<div class="logo" onclick="window.location.href='home.html'">
+                <img src="images/logo.png"  alt="image"/>
+            </div>
+
+            <div class="nav">
+                <a href="index.html">HOME</a>
+                <a href="whoarewe.html">WHO ARE WE?</a>
+                <a class="active" href="events.html">EVENTS</a>
+                <a href="supportus.html">SUPPORT US</a>
+                <a href="contact.html">CONTACT</a>
+            </div>
+			
+			
+            <div class="social">
+              <div class="facebook">
+              <img src="images/facebook_logo.png"  alt="image" onclick="window.location.href='https://www.facebook.com'"/>
+            </div>
+
+            <div class="instagram">
+              <img src="images/instagram_logo.png"  alt="image" id="instagram" onclick="window.location.href='https://www.instagram.com'"/>
+            </div>
+
+            <div class="youtube">
+              <img src="images/youtube_logo.png"  alt="image" id="youtube" onclick="window.location.href='https://www.youtube.com'"/>
+            </div>
+			
+			
+			
+          </div>
+		  
+		<!-- Load icon library -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+		<!-- The form -->
+		
+		<div class="search" action="action_page.php">
+		<input type="text" placeholder="Search.." name="search">
+		<button type="submit"><i class="fa fa-search"></i></button>
+			
+		</div>
+
+    </div>
+	
+	<div class="sidenav">
+            <a class="active" href="#whoarewe">EDUCATIONS<br></a>
+            <a href="#news">THEATRE<br></a>
+            <a href="#contact">CONCERT<br></a>
+            <a href="#about">DANCE<br></a>
+            <a href="#about">GAME<br></a>
+			<a href="#about">GALLERY<br></a>
+			
+            
+          </div>
+		  
+		  <div class="main">
+		  
+		  		<div class="events">
+
+                <img id="info_img" src="images/educa.jpg"  alt="image"/>
+
+                <p>
+                   Our main aim is to assist students as much as possible in order to facilitate their personal, academic and professional growth. To this end we ensure that our courses are affordable and competitively priced without compromising on quality. We aim to provide a well-equipped, friendly and relaxed learning environment in which students, under the guidance of experienced and qualified teaching professionals, can learn to achieve their full potential; and to disseminate valuable knowledge and useful skills to students from every part of the world in order to meet the challenges of the modern world in which we live. Thus we equip students with the best possible preparation for their exams, work and life in general.</p>
+				  
+				   <p>
+				   Our mission is to provide the best learning experiences and support to English learners to meet their learning needs for academic, professional and social purposes. We promises to give every students what we consider the best value and quality of ESL education in the world. We thank you for the opportunity to earn your trust.</p>
+                <br>
+      </div>
+	  </div>
+	  
+	  <div class="fcf-body">
+
+    <div id="fcf-form">
+    <h3 class="fcf-h3">Registratition Form</h3>
+
+    <form id="fcf-form-id" class="fcf-form-class" method="post" action="contact-form-process.php">
+        
+        <div class="fcf-form-group">
+            <label for="Name" class="fcf-label">Your name</label>
+            <div class="fcf-input-group">
+                <input type="text" id="Name" name="Name" class="fcf-form-control" required>
+            </div>
+        </div>
+
+        <div class="fcf-form-group">
+            <label for="Email" class="fcf-label">Your email address</label>
+            <div class="fcf-input-group">
+                <input type="email" id="Email" name="Email" class="fcf-form-control" required>
+            </div>
+        </div>
+
+        <div class="fcf-form-group">
+            <label for="Message" class="fcf-label">Your message</label>
+            <div class="fcf-input-group">
+                <textarea id="Message" name="Message" class="fcf-form-control" rows="6" maxlength="3000" required></textarea>
+            </div>
+        </div>
+
+        <div class="fcf-form-group">
+            <button type="submit" id="fcf-button" class="fcf-btn fcf-btn-primary fcf-btn-lg fcf-btn-block">Send Message</button>
+        </div>
+
+    </form>
+    </div>
+
+</div>
+
+	 
+
+			<footer>
+            <a href="home.html">HOME</a>  | 
+            <a href="whoarewe.html">WHO ARE WE?</a> | 
+            <a href="events.html">EVENTS</a> | 
+            <a href="supportus.html">SUPPORT US</a> | 
+            <a href="contact.html">CONTACT</a>
+			&copy; COPYRIGHT
+
+          </footer>
+    </body>
+</html>
