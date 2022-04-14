@@ -20,8 +20,8 @@ function myHover() {
 }
 
 function changePos() {
-	document.getElementById("myButton").style.marginLeft = Math.random()*700+"px";
-	document.getElementById("myButton").style.marginTop = Math.random()*400+"px";
+	document.getElementById("myButton").style.marginLeft = Math.random()*1000+"px";
+	document.getElementById("myButton").style.marginTop = Math.random()*800+"px";
 }
 
 function myCount() {
