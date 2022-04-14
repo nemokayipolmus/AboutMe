@@ -32,5 +32,12 @@ function myCount() {
 		count = 0;
 		timeout = timeout - 100;
 	}
+	
+	if(timeout<0){
+	alert("YOU CATCH ME! GAME IS OVER...");
+		timeout = 500;
+		level = 1;
+		cnt = 0;
+	}
 
 }
