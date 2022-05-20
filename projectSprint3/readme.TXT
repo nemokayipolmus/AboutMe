@@ -1,4 +1,4 @@
-link:
+link: https://nemokayipolmus.github.io/AboutMe/projectSprint3/home.html
 
 plugins widgets:
 Slider
