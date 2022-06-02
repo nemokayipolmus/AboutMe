@@ -1,0 +1,51 @@
+<!doctype html>
+<html>
+<head>
+    <title>TV Maze</title>
+    <link rel="stylesheet"
+          href="https://unpkg.com/bootstrap/dist/css/bootstrap.css">
+
+</head>
+<body>
+<div class="container bg-dark mt-3 rounded">
+
+    <h1 class="text-warning text-center">TV Series</h1>
+
+    <form class="form-inline" id="search-form">
+        <div class="input-group mb-3">
+            <input class="form-control" id="search-query"
+                   placeholder="Enter show name or term">
+            <div class="input-group-append">
+                <button class="col btn btn-primary" type="submit">Go!</button>
+            </div>
+        </div>
+    </form>
+
+    <div class="row mt-3" id="shows-list">
+    </div>
+
+    <section style="display: none" id="episodes-area">
+        <h2>Episodes</h2>
+        <ul id="episodes-list">
+        </ul>
+    </section>
+
+    <script src="http://unpkg.com/jquery"></script>
+    <script src="http://unpkg.com/axios/dist/axios.js"></script>
+    <script src="index.js"></script>
+
+</div>
+
+<footer style="position: fixed;left: 35%">
+    <a href="index.html">HOME</a>  |
+    <a href="whoarewe.html">WHO ARE WE?</a> |
+    <a href="events.html">EVENTS</a> |
+    <a href="supportus.html">SUPPORT US</a> |
+    <a href="contact.html">CONTACT</a>
+    &copy;
+
+</footer>
+
+</body>
+
+</html>

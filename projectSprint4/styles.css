@@ -1,0 +1,1247 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Style the list */
+.demo-links {
+    border-bottom: none;
+    padding: 5px 5px;
+    line-height: 36px;
+}
+
+/* Style the results */
+.results {
+    background: #de1919;
+    color: white;
+}
+
+.results:hover {
+    background: #333;
+    color: white;
+}
+
+.CSSgal {
+    position: relative;
+    overflow: hidden;
+    height: 100%; /* Or set a fixed height */
+}
+
+/* SLIDER */
+
+.CSSgal .slider {
+    height: 100%;
+    white-space: nowrap;
+    font-size: 0;
+    transition: 0.8s;
+}
+
+/* SLIDES */
+
+.CSSgal .slider > * {
+    font-size: 1rem;
+    display: inline-block;
+    white-space: normal;
+    vertical-align: top;
+    height: 100%;
+    width: 100%;
+    background: none 50% no-repeat;
+    background-size: cover;
+
+}
+
+/* PREV/NEXT, CONTAINERS & ANCHORS */
+
+.CSSgal .prevNext {
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    width: 100%;
+    height: 0;
+}
+
+.CSSgal .prevNext > div + div {
+    visibility: hidden; /* Hide all but first P/N container */
+}
+
+.CSSgal .prevNext a {
+    background: #fff;
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    line-height: 60px; /* If you want to place numbers */
+    text-align: center;
+    opacity: 0.7;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    left: 0;
+}
+
+.CSSgal .prevNext a:hover {
+    opacity: 1;
+}
+
+.CSSgal .prevNext a + a {
+    left: auto;
+    right: 0;
+}
+
+/* NAVIGATION */
+
+.CSSgal .bullets {
+    position: absolute;
+    z-index: 2;
+    bottom: 0;
+    padding: 10px 0;
+    width: 100%;
+    text-align: center;
+}
+
+.CSSgal .bullets > a {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-decoration: none;
+    text-align: center;
+    background: rgba(255, 255, 255, 1);
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+}
+
+.CSSgal .bullets > a + a {
+    background: rgba(255, 255, 255, 0.5); /* Dim all but first */
+}
+
+.CSSgal .bullets > a:hover {
+    background: rgba(255, 255, 255, 0.7) !important;
+}
+
+/* NAVIGATION BUTTONS */
+/* ALL: */
+.CSSgal > s:target ~ .bullets > * {
+    background: rgba(255, 255, 255, 0.5);
+}
+
+/* ACTIVE */
+#s1:target ~ .bullets > *:nth-child(1) {
+    background: rgba(255, 255, 255, 1);
+}
+
+#s2:target ~ .bullets > *:nth-child(2) {
+    background: rgba(255, 255, 255, 1);
+}
+
+#s3:target ~ .bullets > *:nth-child(3) {
+    background: rgba(255, 255, 255, 1);
+}
+
+#s4:target ~ .bullets > *:nth-child(4) {
+    background: rgba(255, 255, 255, 1);
+}
+
+/* More slides? Add here more rules */
+
+/* PREV/NEXT CONTAINERS VISIBILITY */
+/* ALL: */
+.CSSgal > s:target ~ .prevNext > * {
+    visibility: hidden;
+}
+
+/* ACTIVE: */
+#s1:target ~ .prevNext > *:nth-child(1) {
+    visibility: visible;
+}
+
+#s2:target ~ .prevNext > *:nth-child(2) {
+    visibility: visible;
+}
+
+#s3:target ~ .prevNext > *:nth-child(3) {
+    visibility: visible;
+}
+
+#s4:target ~ .prevNext > *:nth-child(4) {
+    visibility: visible;
+}
+
+/* More slides? Add here more rules */
+
+/* SLIDER ANIMATION POSITIONS */
+
+#s1:target ~ .slider {
+    transform: translateX(0%);
+    -webkit-transform: translateX(0%);
+}
+
+#s2:target ~ .slider {
+    transform: translateX(-100%);
+    -webkit-transform: translateX(-100%);
+}
+
+#s3:target ~ .slider {
+    transform: translateX(-200%);
+    -webkit-transform: translateX(-200%);
+}
+
+#s4:target ~ .slider {
+    transform: translateX(-300%);
+    -webkit-transform: translateX(-300%);
+}
+
+/* More slides? Add here more rules */
+
+
+/* YOU'RE THE DESIGNER!
+   ____________________
+   All above was mainly to get it working :)
+   CSSgal CUSTOM STYLES / OVERRIDES HERE: */
+
+.CSSgal {
+    color: #fff;
+    text-align: center;
+}
+
+.CSSgal .slider h2 {
+    margin-top: 40vh;
+    font-weight: 200;
+    letter-spacing: -0.06em;
+    word-spacing: 0.2em;
+    font-size: 3em;
+}
+
+.CSSgal a {
+    border-radius: 50%;
+    margin: 0 3px;
+    color: rgba(0, 0, 0, 0.8);
+    text-decoration: none;
+}
+
+a, a:hover {
+    text-decoration: none;
+}
+
+.top-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 25px;
+    background: #98D7C2;
+}
+
+.top-bar img {
+    width: 25px;
+}
+
+.top-bar ul {
+    list-style: none;
+    display: flex;
+}
+
+.top-bar li {
+    margin: 0px 5px;
+}
+
+.top-bar a {
+    color: #fff;
+}
+
+.top-bar a:hover {
+    color: #222;
+}
+
+nav {
+    background: #167D7F;
+    padding: 5px 20px;
+    display: flex;
+    align-items: center;
+}
+
+nav a {
+    color: #fff;
+}
+
+nav a:hover {
+    color: #DDFFE7;
+}
+
+.logo img {
+    width: 80px;
+    margin-right: 10px;
+}
+
+.logo {
+    flex: 1;
+}
+
+.logo a {
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+}
+
+.logo a:hover {
+    color: #fff;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+.menu li {
+    padding: 15px 10px;
+    font-size: 16px;
+}
+
+.toggle {
+    font-size: 30px;
+    display: none;
+}
+
+.news-and-announcements {
+    border: solid black;
+    width: 40%;
+    margin: 10px;
+}
+
+.bar {
+    background: #298488;
+}
+
+.bar button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.news-arrow {
+    border: solid black;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+}
+
+.right {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+}
+
+.left {
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+}
+
+@media screen and (max-width: 600px) {
+    nav {
+        display: block;
+        position: relative;
+        padding: 15px 20px;
+    }
+
+    .menu {
+        margin-top: 15px;
+        display: none;
+    }
+}
+
+#donationbutton {
+    border: solid;
+    outline: 0;
+    height: 40px;
+    width: 80px;
+    border-radius: 0px;
+    background-color: #ccc;
+    margin-bottom: 10px;
+}
+
+.donation-form {
+    width: 50%;
+    border: solid black;
+    border-radius: 20px;
+    margin: 20px;
+    justify-content: center;
+    text-align: center;
+    float: left;
+    margin-left: 5%;
+}
+
+.donation-form ul {
+    list-style: none;
+}
+
+.donation-form li {
+    display: inline-block;
+    margin: 15px;
+}
+
+.donation-form input + label {
+
+    border: solid rgb(153, 147, 147);
+    padding: 7px;
+
+}
+
+.donation-form [type=radio] {
+    visibility: hidden;
+}
+
+.donation-form .radio-label {
+    cursor: pointer;
+}
+
+input:checked + label {
+    border: solid #298488;
+    padding: 7px;
+}
+
+.donation-form h3 {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+
+.donation-form .amount-label {
+    cursor: pointer;
+}
+
+.donation-form .name_surname_area {
+    margin: 15px;
+    justify-content: center;
+    text-align: center;
+    border: solid black;
+    padding-left: 7px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+}
+
+.donation-form #name_surname {
+    margin-left: 10px;
+}
+
+.donation-form .payment_image {
+    width: 40px;
+    cursor: pointer;
+}
+
+.donation-form .payment_method_area {
+    margin: 15px;
+    justify-content: center;
+    text-align: center;
+    border: solid black;
+    padding-left: 7px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+}
+
+.donation-form input:checked + img {
+    outline: solid 2px #298488;
+}
+
+
+@media (max-width: 750px) {
+    .donation-form {
+        width: 500px;
+        height: 350px;
+        margin: 10px;
+    }
+
+    .donation-form label, p {
+        font-size: 10px;
+    }
+
+    .donation-form .payment_image {
+        width: 30px;
+    }
+
+    .donation-form .name_surname_area {
+        margin: 5px;
+        justify-content: center;
+        text-align: center;
+        border: solid black;
+        padding-left: 3px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+    }
+
+    .donation-form .payment_method_area {
+        margin: 5px;
+        justify-content: center;
+        text-align: center;
+        border: solid black;
+        padding-left: 3px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+    }
+}
+
+
+@media (max-width: 550px) {
+    .donation-form {
+        width: 400px;
+        height: 300px;
+        margin: 10px;
+    }
+
+    .donation-form label, p {
+        font-size: 10px;
+    }
+
+    .donation-form .payment_image {
+        width: 30px;
+    }
+
+    .donation-form .name_surname_area {
+        margin: 5px;
+        justify-content: center;
+        text-align: center;
+        border: solid black;
+        padding-left: 3px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+    }
+
+    .donation-form .payment_method_area {
+        margin: 5px;
+        justify-content: center;
+        text-align: center;
+        border: solid black;
+        padding-left: 3px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+    }
+}
+
+@media (max-width: 420px) {
+    .donation-form {
+        width: 300px;
+        height: 250px;
+        margin: 5px;
+    }
+
+    .donation-form label, p {
+        font-size: 10px;
+    }
+
+    .donation-form .payment_image {
+        width: 30px;
+    }
+
+    .donation-form .name_surname_area {
+        margin: 5px;
+        justify-content: center;
+        text-align: center;
+        border: solid black;
+        padding-left: 3px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+    }
+
+    .donation-form .payment_method_area {
+        margin: 5px;
+        justify-content: center;
+        text-align: center;
+        border: solid black;
+        padding-left: 3px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+    }
+
+}
+
+
+.support-content {
+    margin-top: 20px;
+}
+
+.support-content .support-information {
+    margin-left: 50%;
+    height: 100px;
+    padding-top: 20px;
+    text-align: justify;
+    margin-right: 10px;
+}
+
+.support-information img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    margin-bottom: 20px;
+}
+
+.support-information p {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+
+button {
+    border: 0;
+    outline: 0;
+    height: 40px;
+    width: 40px;
+    border-radius: 40px;
+    background-color: #ccc;
+}
+
+.social {
+    display: inline-block;
+    width: 700px;
+    height: 40px;
+    margin-top: 5px;
+    margin-left: 5px;
+}
+
+.maingroup {
+    position: relative;
+    display: inline-block;
+    height: 40px;
+    width: 180px;
+}
+
+.expgroup {
+    width: 300px;
+    height: 40px;
+    position: absolute;
+    display: inline-block;
+}
+
+.icon {
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+}
+
+.add {
+    background: transparent;
+}
+
+.material-icons {
+    color: #ccc;
+    font-size: 32px;
+}
+
+.material-icons:hover {
+    cursor: pointer;
+    color: #a9a9a9;
+}
+
+.fa {
+    color: #fff;
+    font-size: 26px;
+}
+
+.fa-envelope {
+    font-size: 24px;
+}
+
+.facebook:hover {
+    background-color: #3b5998;
+    cursor: pointer;
+}
+
+.twitter:hover {
+    background-color: #55acee;
+    cursor: pointer;
+}
+
+.email:hover {
+    background-color: #77797e;
+    cursor: pointer;
+}
+
+.gplus:hover {
+    background-color: #dc4e41;
+    cursor: pointer;
+}
+
+.linkedin:hover {
+    background-color: #0077b5;
+    cursor: pointer;
+}
+
+.tumblr:hover {
+    background-color: #35465c;
+    cursor: pointer;
+}
+
+.reddit:hover {
+    background-color: #ff5700;
+    cursor: pointer;
+}
+
+.pocket:hover {
+    background-color: #ef4056;
+    cursor: pointer;
+}
+
+.rotated {
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+
+.modal-button {
+    color: #7d695e;
+    font-family: "Nunito", sans-serif;
+    font-size: 18px;
+    cursor: pointer;
+    border: 0;
+    outline: 0;
+    padding: 15px 60px;
+    border-radius: 30px;
+    background: white;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.16);
+    transition: 0.3s;
+}
+
+.modal-button:hover {
+    border-color: rgba(255, 255, 255, 0.2);
+    background: rgba(255, 255, 255, 0.8);
+}
+
+.modal-button text {
+    text-align: center;
+}
+
+#tabs {
+
+    width: 50%;
+    float: left;
+}
+
+.cancel-dialog {
+    border: none;
+    width: 100%;
+    height: 30px;
+    background-color: rgb(92, 189, 185, 0.7);
+    color: white;
+    cursor: pointer;
+
+}
+
+.dialog {
+    position: absolute;
+    z-index: 12;
+    left: 40%;
+    margin-top: 150px;
+    border: none;
+
+}
+
+.dialog-box {
+    display: inline-block;
+    width: 100%;
+    height: 200px;
+    background-color: #eaf0fc;
+    border: none;
+    text-align: center;
+    color: black;
+    font-weight: bold;
+    padding: 15px;
+    padding-top: 40px;
+    margin-bottom: 0px;
+
+}
+
+#heartbutton {
+    margin: 10px;
+    cursor: pointer;
+}
+
+.mapouter {
+    margin-top: 10px;
+    margin-left: 3%;
+    margin-right: 3%;
+    position: relative;
+    float: left;
+}
+
+
+.form-control {
+    margin-top: 1%;
+    display: block;
+    width: 150%;
+    height: calc(2.05rem + 2px);
+    padding: 25px 0.75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+    -webkit-transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .form-control {
+        -webkit-transition: none;
+        transition: none;
+    }
+}
+
+.form-control::-ms-expand {
+    background-color: transparent;
+    border: 0;
+}
+
+.form-control:focus {
+    color: #495057;
+    background-color: #fff;
+    border-color: #dfc8a9;
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(188, 140, 76, 0.25);
+}
+
+
+.form-control::placeholder {
+    color: #6c757d;
+    opacity: 1;
+}
+
+
+.form-group {
+    margin-bottom: 1rem;
+    margin-left: 5%;
+
+}
+
+.form-text {
+    display: block;
+    margin-top: 0.25rem;
+}
+
+#messageform {
+    margin-left: 2%;
+    margin-top: 3%;
+    float: left;
+}
+
+#message {
+    height: 140px;
+}
+
+.sendMessageButton {
+    position: relative;
+    left: 55%;
+    border: solid;
+    outline: 0;
+    height: 40px;
+    width: 80px;
+    border-radius: 0px;
+    background-color: #ccc;
+    margin-bottom: 10px;
+
+}
+
+.container-contact {
+    position: relative;
+    margin-top: 3%;
+    margin-left: 75%;
+}
+
+.container-item {
+    padding-bottom: 3%;
+}
+
+.footer {
+    position: absolute;
+    bottom: 0px;
+}
+
+.copyright {
+    text-align: center;
+}
+
+.sidenav {
+    position: absolute;
+    width: 200px;
+    z-index: 1;
+    top: 300px;
+    left: 30px;
+    background: #3d919f;
+    overflow-x: hidden;
+    padding: 8px 8px;
+    text-align: center;
+    border: white;
+
+
+}
+
+.sidenav a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 22px;
+    color: white;
+    display: block;
+    border: solid;
+    border-color: white;
+}
+
+.sidenav a:hover {
+    color: #167D7F;
+}
+
+.aboutus {
+
+    width: 65%;
+    position: absolute;
+    left: 22.5%;
+    top: 22.5%;
+    text-align: center;
+    margin: 5px;
+}
+
+.aboutus img {
+    position: relative;
+    width: 75%;
+
+}
+
+.aboutus p {
+    margin-top: 10px;
+}
+
+.support-information img {
+    width: 50%;
+}
+
+.support-information p {
+    text-align: center;
+    display: inline-block;
+    margin-left: 20%;
+}
+
+#mainForm {
+    text-align: center;
+    display: inline-block;
+    border: solid;
+    border-color: #3d919f;
+    width: 50%;
+    font-size: large;
+}
+
+#mainForm p {
+    margin-top: 2.2%;
+    font-weight: bold;
+    display: block;
+}
+
+#mainForm input {
+    padding: 2px;
+    margin-left: 10px;
+
+}
+
+#datepicker input {
+    display: inline;
+    margin-left: 750px;
+}
+
+
+.ui-datepicker {
+    width: 300px;
+    height: 300px;
+    margin: 5px auto 0;
+    font: 12pt Arial, sans-serif;
+
+}
+
+.ui-datepicker table {
+    width: 100%;
+}
+
+.ui-datepicker-header {
+    background: black;
+    color: gray;
+    font-family: 'Times New Roman';
+    border-width: 1px 0 0 0;
+    border-style: solid;
+    border-color: #111;
+}
+
+.ui-datepicker-title {
+    text-align: center;
+    font-size: 15px;
+
+}
+
+.ui-datepicker-prev {
+    float: left;
+    cursor: pointer;
+    background-position: center -30px;
+}
+
+.ui-datepicker-next {
+    float: right;
+    cursor: pointer;
+    background-position: center 0px;
+}
+
+.ui-datepicker thead {
+    background-color: #f7f7f7;
+
+    /*border-bottom: 1px solid #bbb;*/
+}
+
+.ui-datepicker th {
+    background-color: #808080;
+    text-transform: uppercase;
+    font-size: 8pt;
+    color: #666666;
+    /*text-shadow: 1px 0px 0px #fff;*/
+    /*filter: dropshadow(color=#fff, offx=1, offy=0);*/
+}
+
+.ui-datepicker tbody td {
+    padding: 0;
+    /*border-right: 1px solid #808080;*/
+}
+
+.ui-datepicker tbody td:last-child {
+    border-right: 0px;
+}
+
+.ui-datepicker-calendar a.ui-state-default {
+    background: rgb(69, 66, 66);
+    color: #f7f7f7;
+}
+
+.ui-datepicker-calendar td.ui-datepicker-today a {
+    background: rgb(254, 244, 134);
+    color: black;
+}
+
+.ui-menu-item .ui-menu-item-wrapper.ui-state-active {
+    background: #111;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+#mainFormButton {
+    border: solid;
+    outline: 0;
+    height: 40px;
+    width: 80px;
+    border-radius: 0px;
+    background-color: #ccc;
+    margin-bottom: 10px;
+}
+
+.events {
+
+    width: 50%;
+    position: absolute;
+    left: 275px;
+    top: 30%;
+    text-align: justify;
+}
+
+.events img {
+    position: relative;
+    width: 400px;
+    margin-left: 25%;
+
+}
+
+.events p {
+    margin-top: 2%;
+}
+
+#fcf-form {
+    display: block;
+}
+
+.fcf-body {
+    position: absolute;
+    top: 175px;
+    right: 125px;
+    margin: 0;
+    font-family: -apple-system, Arial, sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    text-align: left;
+    background-color: #fff;
+    padding: 20px;
+    padding-bottom: 10px;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+    max-width: 20%;
+}
+
+.fcf-form-group {
+    margin-bottom: 1rem;
+}
+
+.fcf-input-group {
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -ms-flex-align: stretch;
+    align-items: stretch;
+    width: 100%;
+}
+
+.fcf-form-control {
+    display: block;
+    width: 100%;
+    height: calc(1em + 0.5rem + 2px);
+    padding: 0.175rem 0.75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    outline: none;
+    border-radius: 0.25rem;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.fcf-form-control:focus {
+    border: 1px solid #313131;
+}
+
+select.fcf-form-control[size], select.fcf-form-control[multiple] {
+    height: auto;
+}
+
+textarea.fcf-form-control {
+    font-family: -apple-system, Arial, sans-serif;
+    height: auto;
+}
+
+label.fcf-label {
+    display: inline-block;
+    margin-bottom: 0.5rem;
+}
+
+.fcf-btn {
+    display: inline-block;
+    font-weight: 400;
+    color: #212529;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-color: transparent;
+    border: 1px solid transparent;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: 0.25rem;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .fcf-btn {
+        transition: none;
+    }
+}
+
+.fcf-btn:hover {
+    color: #212529;
+    text-decoration: none;
+}
+
+.fcf-btn:focus, .fcf-btn.focus {
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+.fcf-btn-primary {
+    color: #fff;
+    background-color: #3d919f;
+    border-color: #3d919f;
+}
+
+.fcf-btn-primary:hover {
+    color: #fff;
+    background-color: #98D7C2;
+    border-color: #98D7C2;
+}
+
+.fcf-btn-primary:focus, .fcf-btn-primary.focus {
+    color: #fff;
+    background-color: #98D7C2;
+    border-color: #98D7C2;
+    box-shadow: 0 0 0 0.2rem rgba(38, 143, 255, 0.5);
+}
+
+.fcf-btn-lg, .fcf-btn-group-lg > .fcf-btn {
+    padding: 0.5rem 1rem;
+    font-size: 1.25rem;
+    line-height: 1.5;
+    border-radius: 0.3rem;
+}
+
+.fcf-btn-block {
+    display: block;
+    width: 100%;
+}
+
+.fcf-btn-block + .fcf-btn-block {
+    margin-top: 0.5rem;
+}
+
+input[type="submit"].fcf-btn-block, input[type="reset"].fcf-btn-block, input[type="button"].fcf-btn-block {
+    width: 100%;
+}
+
+footer{
+    position: fixed;
+    bottom: 5px;
+    left: 35%;
+    float: left;
+}
+
+#div1{
+
+    padding-top: 1%;
+    padding-left: 2%;
+
+}
+
+#boardButton{
+
+    cursor: pointer;
+    margin-top: 1%;
+    margin-left: 10%;
+    position: center;
+    border: solid grey;
+    outline: 0;
+    height: 40px;
+    width: 100px;
+    border-radius: 0px;
+    background-color: #3d919f;
+    margin-bottom: 10px;
+    color: white;
+
+}
